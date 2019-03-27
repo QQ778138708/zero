@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>常用的html块级标签（块元素）</title>
+</head>
+
+<body>
+    <!-- 常用的有语义的块级元素 有默认样式 独占一行 -->
+    <!-- 标题标签 h1-h6 -->
+    <h1>这是一级标题</h1>
+    <h2>这是二级标题</h2>
+    <h3>这是三级标题</h3>
+    <h4>这是四级标题</h4>
+    <h5>这是五级标题</h5>
+    <h6>这是六级标题</h6>
+
+    <!-- 段落标签 p 独占一行 有默认样式 -->
+    <!-- 换行标签 br 强制换行 -->
+    <p>HTML 指的是超文本标记语言<br> (Hyper Text Markup Language)</p>
+    <p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)</p>
+
+    <!-- 列表 -->
+    <!-- 无序列表 ul li 有默认样式 独占一行-->
+    <ul>
+        <li>列表项1</li>
+        <li>列表项2</li>
+        <li>列表项3</li>
+    </ul>
+
+    <!-- 有序列表 ol li 有默认样式 独占一行 -->
+    <!-- 有序列表当中有type属性 设置有序列表的标记类型
+    start属性 设置列表项从第几个标记开始 -->
+    <ol type="A" start="5">
+        <li>这是有序列表</li>
+        <li>这是有序列表</li>
+    </ol>
+
+    <!-- 自定义列表 dl dt dd -->
+    <dl>
+        <dt>这是自定义列表的标题</dt>
+        <dd>这是自定义列表</dd>
+        <dd>这是自定义列表</dd>
+        <dt>这是自定义列表的标题</dt>
+        <dd>这是自定义列表</dd>
+        <dd>这是自定义列表</dd>
+
+    </dl>
+
+    表格1
+    <!-- 表格标签 table 声明一个表格 th表头 tr行 td列-->
+    <!-- 声明一个表格 
+        border 规定表格边框的宽度 
+        cellpadding 规定单元边沿与其内容之间的空白
+        cellspaceing 规定单元格之间的空白
+    -->
+
+    <table border="1" cellpadding="10px" cellspacing="0">
+        <!-- 表格当中的行 第一行 -->
+        <tr>
+            <!-- 这是表格当中的列 -->
+            <td>这是第一行的第一列</td>
+            <td>这是第一行的第二列</td>
+        </tr>
+        <!-- 这是第二行 -->
+        <tr>
+            <td>这是第二行的第一列</td>
+            <td>这是第二行的第二列</td>
+        </tr>
+
+    </table>
+
+    表格2
+    <table border="1" cellpadding="10px" cellspacing="0">
+        <tr>
+            <!-- 跨列的单元格 colspan 跨列的个数 -->
+            <td colspan="4">一个单元格跨越4列</td>
+            <!-- <td>这是第一行的第二列</td>
+            <td>这是第一行的第三列</td>
+            <td>这是第一行的第四列</td> -->
+        </tr>
+        <tr>
+            <td>这是第二行的第一列</td>
+            <td>这是第二行的第二列</td>
+            <td>这是第二行的第三列</td>
+            <td>这是第二行的第四列</td>
+        </tr>
+
+    </table>
+
+    表格3
+    <table border="1" cellpadding="10px" cellspacing="0">
+        <tr>
+            <!-- 跨行的单元格 rowspan 跨行的个数 -->
+            <td rowspan="2">一个单元格跨越2行</td>
+            <td>这是第一行的第二列</td>
+            <td>这是第一行的第三列</td>
+            <td>这是第一行的第四列</td> 
+        </tr>
+        <tr>
+            <!-- <td>这是第二行的第一列</td> -->
+            <td>这是第二行的第二列</td>
+            <td>这是第二行的第三列</td>
+            <td>这是第二行的第四列</td>
+        </tr>
+
+    </table>
+
+    表格4
+    <table border="1" cellpadding="10px" cellspacing="0">
+        <tr>
+            <!-- 表头 th 显示为粗体居中 -->
+            <th colspan="4">这是表头</th>
+        </tr>
+        <tr>
+            <td>这是第二行的第一列</td>
+            <td>这是第二行的第二列</td>
+            <td>这是第二行的第三列</td>
+            <td>这是第二行的第四列</td>
+        </tr> 
+    </table>
+
+    <!-- 水平分隔线 -->
+    <hr>
+
+    <!-- 区块元素 没有默认样式（没有默认的语义）div 独占一行 一般用来划定一个区域 配合css在布局当中使用-->
+    <div>这是一个div</div>
+
+</body>
+
+</html>
