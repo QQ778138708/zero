@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>表单标签</title>
+</head>
+<body>
+    <!-- form标签来划定一个表单区域 -->
+    <!-- action 数据提交地址 -->
+    <!-- method 提交方式 get post get 通过url地址传输数据-->
+    <!-- 如果表单中有文件上传必须添加这个属性 指定属性值为 multipart/form-data 用于文件转码-->
+    <form action="" method="GET" enctype="multipart/form-data">
+        <!-- 表单控件 普通文本框 密码框 单选框 多选框-->
+        用户名：<input type="text" name="username" placeholder="请输入用户名"><br>
+
+        密码：<input type="password" name="password"><br>
+
+        <!-- 单选框的name属性必须相同 必须有name属性和value属性 -->
+        性别：<input type="radio" name="gender" value="1" checked>男
+              <input type="radio" name="gender" value="0">女<br>
+
+        <!-- 多选框 必须有name属性和value属性 name属性必须相同 -->
+        爱好：<input type="checkbox" name="hobby" value="basketball">篮球
+              <input type="checkbox" name="hobby" value="football">足球
+              <input type="checkbox" name="hobby" value="table tennis">乒乓球<br>
+
+        <!-- 下拉列表 select option 必须指定name属性和value属性 -->
+        学历：<select name="education_background">
+                <option value="primary_school">小学</option>
+                <option value="junior_high_school">初中</option>
+                <option value="senior_high_school">高中</option>
+            <option value="college">大学</option>
+              </select>
+        
+        <!-- 文件上传 -->
+        请选择上传文件：<input type="file" name="file"><br>
+
+        <!-- textarea -->
+        请输入个人说明：<br>
+        <textarea name="introduce"></textarea><br>
+
+        <!-- 提交按钮 -->
+        <input type="submit" value="提交">
+
+        <!-- 重置按钮 -->
+        <input type="reset">
+
+        <!-- 隐藏域 不需要用户查看和填写的信息 -->
+        <input type="hidden" name="">
+
+
+
+    </form>
+</body>
+</html>
