@@ -1,16 +1,15 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
     <title>常用的html块级标签（块元素）</title>
 </head>
 
 <body>
     <!-- 常用的有语义的块级元素 有默认样式 独占一行 -->
-    <!-- 标题标签 h1-h6 -->
+
+    <!-- 标题标签 h1-h6 一个页面建议只有一个h1 -->
     <h1>这是一级标题</h1>
     <h2>这是二级标题</h2>
     <h3>这是三级标题</h3>
@@ -20,7 +19,7 @@
 
     <!-- 段落标签 p 独占一行 有默认样式 -->
     <!-- 换行标签 br 强制换行 -->
-    <p>HTML 指的是超文本标记语言<br> (Hyper Text Markup Language)</p>
+    <p>HTML 指的是超文本标记语言<br /> (Hyper Text Markup Language)</p>
     <p>HTML 指的是超文本标记语言 (Hyper Text Markup Language)</p>
 
     <!-- 列表 -->
@@ -32,8 +31,7 @@
     </ul>
 
     <!-- 有序列表 ol li 有默认样式 独占一行 -->
-    <!-- 有序列表当中有type属性 设置有序列表的标记类型
-    start属性 设置列表项从第几个标记开始 -->
+    <!-- type属性 设置有序列表的标记类型 start属性 设置列表项从第几个标记开始 -->
     <ol type="A" start="5">
         <li>这是有序列表</li>
         <li>这是有序列表</li>
@@ -52,11 +50,7 @@
 
     表格1
     <!-- 表格标签 table 声明一个表格 th表头 tr行 td列-->
-    <!-- 声明一个表格 
-        border 规定表格边框的宽度 
-        cellpadding 规定单元边沿与其内容之间的空白
-        cellspacing 规定单元格之间的空白
-    -->
+    <!-- border 规定表格边框的宽度 cellpadding 规定单元边沿与其内容之间的空白 cellspacing 规定单元格之间的空白 -->
 
     <table border="1" cellpadding="10px" cellspacing="0">
         <!-- 表格当中的行 第一行 -->
@@ -77,10 +71,7 @@
     <table border="1" cellpadding="10px" cellspacing="0">
         <tr>
             <!-- 跨列的单元格 colspan 跨列的个数 -->
-            <td colspan="4">一个单元格跨越4列</td>
-            <!-- <td>这是第一行的第二列</td>
-            <td>这是第一行的第三列</td>
-            <td>这是第一行的第四列</td> -->
+            <td colspan="4">一个单元格跨越4列</td>            
         </tr>
         <tr>
             <td>这是第二行的第一列</td>
@@ -101,7 +92,6 @@
             <td>这是第一行的第四列</td> 
         </tr>
         <tr>
-            <!-- <td>这是第二行的第一列</td> -->
             <td>这是第二行的第二列</td>
             <td>这是第二行的第三列</td>
             <td>这是第二行的第四列</td>
