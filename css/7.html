@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>文本字体设置</title>
+    <style>
+        .font{
+            /* 文本颜色 */
+            color: red;
+
+            /* 字体大小 谷歌浏览器默认字体大小16px 谷歌浏览器中字体最小为12px 当设置小于12px时 也是以12px来显式 */
+            font-size: 30px;
+
+            /* 设置字体 */
+            font-family: '楷体';
+
+            /* 这只字体是否是斜体 font-style:"italic" */
+            font-style: "normal";
+
+            /* 设置粗体 font-weight:bold */
+            font-weight: "bold";
+
+            /* 设置首行缩进 */
+            text-indent: 60px;
+        }
+        .font1{
+            width: 500px;
+            height: 200px;
+            background-color: bisque;
+            /* 利用line-height设置单行文本的垂直居中 行高设置为父级元素的行高 实现文本垂直居中 */
+            line-height: 200px;
+
+            /* 设置文本水平对齐方式 */
+            text-align: center;
+        }
+        a{
+            /* 去除链接的下划线 */
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="font">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eveniet adipisci, dolores molestiae sit magni voluptas qui, natus consectetur minima libero ratione praesentium fugiat at animi. Illo atque non culpa quos.</div>
+    
+    <div class="font1">hello world</div>
+    
+    <a target="_blank" href="https://www.baidu.com" >百度一下，你就知道</a>
+</body>
+</html>
